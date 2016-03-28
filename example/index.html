@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Example
+        </title>
+        <!--script src="../client/general.js"></script>
+        <script src="../client/utils.js"></script-->
+        <script src="../client/user.js"></script>
+        <script src="../client/product.js"></script>
+        <!--script src="../client/images.js"></script-->
+    </head>
+    <body>
+        <script>
+            login("test","test", function(user) {
+                if(user.username != undefined)
+                    console.log(user.username)
+                else {
+                    console.log(user.message)
+                }
+            })
+        </script>
+    </body>
+</html>
